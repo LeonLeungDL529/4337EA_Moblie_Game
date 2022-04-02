@@ -20,6 +20,7 @@ public class CameraScript : MonoBehaviour {
 
     void Update()
     {
+        //Input.GetTouch();
         if (Input.GetKey(KeyCode.Escape))
         {
             DoMouseMovement = !DoMouseMovement;
