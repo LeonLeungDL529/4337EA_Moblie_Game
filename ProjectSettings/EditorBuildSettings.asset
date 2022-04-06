@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/RTS_EA_4332/Scenes/LoadingScene.unity
+    guid: dd279ab3cfb055e4c88b541da238d16a
+  - enabled: 1
+    path: Assets/RTS_EA_4332/Scenes/Start_sence.unity
+    guid: 0e72ebc2c857dd44ab1235110347d7ce
+  - enabled: 1
+    path: Assets/RTS_EA_4332/Scenes/4332EA/RTS_Capture_Map.unity
+    guid: 6859ec3da24408945aff155549b888e4
   m_configObjects: {}

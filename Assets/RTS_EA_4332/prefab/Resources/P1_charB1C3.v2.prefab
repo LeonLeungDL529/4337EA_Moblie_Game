@@ -160,7 +160,8 @@ MonoBehaviour:
   bullet: {fileID: 8163406525998981155, guid: bb3cdef43661ccd4c9a9339b53d0a5ed, type: 3}
   enemyTag: Player_2
   character: {fileID: 9093920687031807662}
-  shootingSource: {fileID: 6776093378071292301, guid: d29e0b3d6ef31e540ba67fe0e42c6eed, type: 3}
+  shootingSource: {fileID: 6776093378071292301, guid: d29e0b3d6ef31e540ba67fe0e42c6eed,
+    type: 3}
   beginningShooting: 0
   layerMask:
     serializedVersion: 2
@@ -602,7 +603,8 @@ MonoBehaviour:
   health: 250
   maxHealth: 250
   character: {fileID: 9093920686337737831}
-  deathSource: {fileID: 1755712211176767056, guid: 4219489eceb22414d96f739d816c7139, type: 3}
+  deathSource: {fileID: 1755712211176767056, guid: 4219489eceb22414d96f739d816c7139,
+    type: 3}
 --- !u!114 &8249904636210030847
 MonoBehaviour:
   m_ObjectHideFlags: 0
