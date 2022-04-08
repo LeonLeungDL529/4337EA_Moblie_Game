@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.21523574, g: 0.15313521, b: 0.1953708, a: 1}
+  m_IndirectSpecularColor: {r: 0.037173532, g: 0.020588752, b: 0.031278543, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -106,15 +106,15 @@ NavMeshSettings:
   m_BuildSettings:
     serializedVersion: 2
     agentTypeID: 0
-    agentRadius: 0.5
+    agentRadius: 0.54
     agentHeight: 1
-    agentSlope: 15
+    agentSlope: 16.3
     agentClimb: 0.75
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     minRegionArea: 2
     manualCellSize: 0
-    cellSize: 0.16666667
+    cellSize: 0.18
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: 18ce087f9b2e29d4ca9ed8bea3e5b1e1, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 4e9150f56baa8ba4d9f92db476090a42, type: 2}
 --- !u!1 &2935581
 GameObject:
   m_ObjectHideFlags: 0
@@ -1403,15 +1403,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a07cf462d1809274f8eeb29ab6a6c57f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soldier: {fileID: 1106560572103056746, guid: 1667ad57deee4f847820386ebf432b0e, type: 3}
-  minX: -25.5
-  maxX: -24.5
-  minZ: -7
-  maxZ: 7
-  Cost_Soldier: {fileID: 1363034665}
-  neededCost: 300
-  selectManager: {fileID: 0}
-  ChessDetail: {fileID: 55635936}
 --- !u!1 &173417905
 GameObject:
   m_ObjectHideFlags: 0
@@ -1640,15 +1631,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a07cf462d1809274f8eeb29ab6a6c57f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soldier: {fileID: 8854506248273526700, guid: 6eb68ed23044148418bfcccbec280dd3, type: 3}
-  minX: 24.5
-  maxX: 25.5
-  minZ: -7
-  maxZ: 7
-  Cost_Soldier: {fileID: 2143537795}
-  neededCost: 100
-  selectManager: {fileID: 0}
-  ChessDetail: {fileID: 657903138}
 --- !u!1 &221275700
 GameObject:
   m_ObjectHideFlags: 0
@@ -2653,7 +2635,7 @@ RectTransform:
   - {fileID: 1165559132}
   - {fileID: 514769706}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2902,15 +2884,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a07cf462d1809274f8eeb29ab6a6c57f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soldier: {fileID: 9093920686337737831, guid: df648a06d2b805541879eb80b9f87dbe, type: 3}
-  minX: -25.5
-  maxX: -24.5
-  minZ: -7
-  maxZ: 7
-  Cost_Soldier: {fileID: 1363034665}
-  neededCost: 150
-  selectManager: {fileID: 0}
-  ChessDetail: {fileID: 1480086868}
 --- !u!1 &352893797
 GameObject:
   m_ObjectHideFlags: 0
@@ -5168,15 +5141,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a07cf462d1809274f8eeb29ab6a6c57f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soldier: {fileID: 1026202234339494799, guid: 989fe276e576af9408a11fa4e6228560, type: 3}
-  minX: -25.5
-  maxX: -24.5
-  minZ: -7
-  maxZ: 7
-  Cost_Soldier: {fileID: 1363034665}
-  neededCost: 100
-  selectManager: {fileID: 0}
-  ChessDetail: {fileID: 1166835078}
 --- !u!1 &652153528
 GameObject:
   m_ObjectHideFlags: 0
@@ -5479,7 +5443,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &692611109
 GameObject:
@@ -5732,8 +5696,90 @@ Transform:
   m_LocalScale: {x: 3.3185, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 40, y: 0, z: 0}
+--- !u!1 &721999771
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 721999772}
+  - component: {fileID: 721999774}
+  - component: {fileID: 721999773}
+  m_Layer: 9
+  m_Name: Cube.001
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 8
+  m_IsActive: 1
+--- !u!4 &721999772
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721999771}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.020426, y: 3, z: 1}
+  m_Children:
+  - {fileID: 1718407629}
+  m_Father: {fileID: 1897345491}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &721999773
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721999771}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 6cced3ec49713a544b4353ad3a8a8912, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &721999774
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721999771}
+  m_Mesh: {fileID: 4493585093827132993, guid: 7113cfb60a31c3c4fa259a1760edd411, type: 3}
 --- !u!1 &734297197
 GameObject:
   m_ObjectHideFlags: 0
@@ -5881,15 +5927,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a07cf462d1809274f8eeb29ab6a6c57f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soldier: {fileID: 6489191486790153070, guid: 3e45a9a26c55be14a97693ad26845452, type: 3}
-  minX: 24.5
-  maxX: 25.5
-  minZ: -7
-  maxZ: 7
-  Cost_Soldier: {fileID: 2143537795}
-  neededCost: 50
-  selectManager: {fileID: 0}
-  ChessDetail: {fileID: 1920572437}
 --- !u!1 &736051220
 GameObject:
   m_ObjectHideFlags: 0
@@ -7206,15 +7243,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a07cf462d1809274f8eeb29ab6a6c57f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soldier: {fileID: 6489191486790153070, guid: 3e45a9a26c55be14a97693ad26845452, type: 3}
-  minX: 0
-  maxX: 0
-  minZ: 0
-  maxZ: 0
-  Cost_Soldier: {fileID: 2143537795}
-  neededCost: 250
-  selectManager: {fileID: 0}
-  ChessDetail: {fileID: 1013685878}
 --- !u!1 &910297114
 GameObject:
   m_ObjectHideFlags: 0
@@ -7517,13 +7545,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a211983e4ffc0ee4393e7da4c3f6b2f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TheCam: {fileID: 963194225}
-  cameraSpeed: 1
-  mouseApproachSpeed: 0
-  DoMouseMovement: 0
-  scrollSpeed: 5
-  minpos: {x: -100, y: 16.5, z: -100}
-  maxpos: {x: 100, y: 16.5, z: 100}
 --- !u!1 &966171253
 GameObject:
   m_ObjectHideFlags: 0
@@ -7572,12 +7593,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e77d8a415d2177d4eb514d3c4d8e1b5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectCam: {fileID: 963194227}
-  SelectingBoxRect: {fileID: 0}
-  minBoxSizeBeforeSelect: 10
-  selectUnderMouseTimer: 0.1
-  selecting: 0
-  selectableChars: []
 --- !u!1 &1013685878
 GameObject:
   m_ObjectHideFlags: 0
@@ -8900,7 +8915,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6abaa6756cc9d9d40a7fec4f2d2bc424, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: {fileID: 919132147965922977}
 --- !u!1 &1165559131
 GameObject:
   m_ObjectHideFlags: 0
@@ -8971,8 +8985,9 @@ Transform:
   - {fileID: 1687629190}
   - {fileID: 872616754}
   - {fileID: 591346396}
+  - {fileID: 1897345491}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1166835078
 GameObject:
@@ -9079,9 +9094,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c1dda465ee634c45b8156ed0ee95de4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  identified: 
-  p1UI: {fileID: 1592487124}
-  p2UI: {fileID: 1165559131}
 --- !u!4 &1173250985
 Transform:
   m_ObjectHideFlags: 0
@@ -9094,7 +9106,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1177760557
 GameObject:
@@ -9441,7 +9453,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6abaa6756cc9d9d40a7fec4f2d2bc424, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: {fileID: 919132148878560558}
 --- !u!1 &1238446442
 GameObject:
   m_ObjectHideFlags: 0
@@ -9777,7 +9788,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aa25b92b2c6671428b70f2a6d0b44d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost_Soldier: {fileID: 1363034665}
 --- !u!1 &1299200073
 GameObject:
   m_ObjectHideFlags: 0
@@ -10006,15 +10016,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a07cf462d1809274f8eeb29ab6a6c57f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soldier: {fileID: 3009154914521298655, guid: 218ef04390bf96742a91b4710bab40c7, type: 3}
-  minX: -25.5
-  maxX: -24.5
-  minZ: -7
-  maxZ: 7
-  Cost_Soldier: {fileID: 1363034665}
-  neededCost: 50
-  selectManager: {fileID: 0}
-  ChessDetail: {fileID: 1391573751}
 --- !u!1 &1304865837
 GameObject:
   m_ObjectHideFlags: 0
@@ -10173,6 +10174,85 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1316143603}
   m_CullTransparentMesh: 1
+--- !u!1001 &1319330659
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1843860095676810527, guid: 4e87d8faa2d9ce349bec36bc7241312b,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1843860095676810527, guid: 4e87d8faa2d9ce349bec36bc7241312b,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7492921920246029398, guid: 4e87d8faa2d9ce349bec36bc7241312b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7492921920246029398, guid: 4e87d8faa2d9ce349bec36bc7241312b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 19.624882
+      objectReference: {fileID: 0}
+    - target: {fileID: 7492921920246029398, guid: 4e87d8faa2d9ce349bec36bc7241312b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000009536743
+      objectReference: {fileID: 0}
+    - target: {fileID: 7492921920246029398, guid: 4e87d8faa2d9ce349bec36bc7241312b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.40029144
+      objectReference: {fileID: 0}
+    - target: {fileID: 7492921920246029398, guid: 4e87d8faa2d9ce349bec36bc7241312b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7492921920246029398, guid: 4e87d8faa2d9ce349bec36bc7241312b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7492921920246029398, guid: 4e87d8faa2d9ce349bec36bc7241312b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7492921920246029398, guid: 4e87d8faa2d9ce349bec36bc7241312b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7492921920246029398, guid: 4e87d8faa2d9ce349bec36bc7241312b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7492921920246029398, guid: 4e87d8faa2d9ce349bec36bc7241312b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7492921920246029398, guid: 4e87d8faa2d9ce349bec36bc7241312b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7492921920246029399, guid: 4e87d8faa2d9ce349bec36bc7241312b,
+        type: 3}
+      propertyPath: m_Name
+      value: Chess
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4e87d8faa2d9ce349bec36bc7241312b, type: 3}
 --- !u!1 &1323987790
 GameObject:
   m_ObjectHideFlags: 0
@@ -10560,11 +10640,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae5380119a1a9974ca020e3849668c36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextForCost: 0
-  cost: 0
-  maxCost: 500
-  interval: 3.5
-  costRare: 25
 --- !u!4 &1363034666
 Transform:
   m_ObjectHideFlags: 0
@@ -10577,7 +10652,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1375123307
 GameObject:
@@ -11163,15 +11238,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a07cf462d1809274f8eeb29ab6a6c57f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soldier: {fileID: 3189424505826672304, guid: 32443b1fef9d31f40acff22f38e728e6, type: 3}
-  minX: 0
-  maxX: 0
-  minZ: 0
-  maxZ: 0
-  Cost_Soldier: {fileID: 2143537795}
-  neededCost: 300
-  selectManager: {fileID: 0}
-  ChessDetail: {fileID: 1409068960}
 --- !u!1 &1416074152
 GameObject:
   m_ObjectHideFlags: 0
@@ -12584,15 +12650,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a07cf462d1809274f8eeb29ab6a6c57f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soldier: {fileID: 3009154914521298655, guid: 218ef04390bf96742a91b4710bab40c7, type: 3}
-  minX: -25.5
-  maxX: -24.5
-  minZ: -7
-  maxZ: 7
-  Cost_Soldier: {fileID: 1363034665}
-  neededCost: 250
-  selectManager: {fileID: 0}
-  ChessDetail: {fileID: 1048729197}
 --- !u!1 &1582730671
 GameObject:
   m_ObjectHideFlags: 0
@@ -12688,7 +12745,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1582730676
 MonoBehaviour:
@@ -12702,9 +12759,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be9e8488eab0b7e4aa82a69a2bbf8d7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color:
-    serializedVersion: 2
-    rgba: 4294901765
 --- !u!114 &1582730677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12717,11 +12771,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb2e42c5dcc406b49bc2e2f77dbaa780, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointer: {fileID: 1582730671}
-  maincam: {fileID: 963194227}
-  G_layer:
-    serializedVersion: 2
-    m_Bits: 512
 --- !u!1 &1592487124
 GameObject:
   m_ObjectHideFlags: 0
@@ -13294,7 +13343,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a2452284c39568468db51665b89ee1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost_Soldier: {fileID: 2143537795}
 --- !u!1 &1687629189
 GameObject:
   m_ObjectHideFlags: 0
@@ -13488,15 +13536,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a07cf462d1809274f8eeb29ab6a6c57f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soldier: {fileID: 9169089505070515832, guid: ca4dca410adaced4dbec1ce336775adb, type: 3}
-  minX: 0
-  maxX: 0
-  minZ: 0
-  maxZ: 0
-  Cost_Soldier: {fileID: 2143537795}
-  neededCost: 150
-  selectManager: {fileID: 0}
-  ChessDetail: {fileID: 1746577176}
 --- !u!1 &1716394539
 GameObject:
   m_ObjectHideFlags: 0
@@ -13592,6 +13631,102 @@ Transform:
   m_Father: {fileID: 1165674483}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1718407628
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1718407629}
+  - component: {fileID: 1718407632}
+  - component: {fileID: 1718407631}
+  - component: {fileID: 1718407630}
+  m_Layer: 9
+  m_Name: Quad
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 8
+  m_IsActive: 1
+--- !u!4 &1718407629
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1718407628}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -0.11, y: 0, z: -0.06}
+  m_LocalScale: {x: 0.11318668, y: 0.016069269, z: 1}
+  m_Children: []
+  m_Father: {fileID: 721999772}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!64 &1718407630
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1718407628}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &1718407631
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1718407628}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1718407632
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1718407628}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1721738725
 GameObject:
   m_ObjectHideFlags: 0
@@ -13932,7 +14067,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a2452284c39568468db51665b89ee1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost_Soldier: {fileID: 1363034665}
 --- !u!1 &1792665305
 GameObject:
   m_ObjectHideFlags: 0
@@ -14810,6 +14944,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1893685939}
   m_Mesh: {fileID: -5495902117074765545, guid: bd79ffdf1c3e386449159fd2faafc674, type: 3}
+--- !u!1 &1897345490
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1897345491}
+  m_Layer: 9
+  m_Name: ld Bridgee (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 8
+  m_IsActive: 1
+--- !u!4 &1897345491
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1897345490}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 46.78062, y: 21.119036, z: -47.93}
+  m_LocalScale: {x: 200, y: 100, z: 100}
+  m_Children:
+  - {fileID: 721999772}
+  m_Father: {fileID: 1165674483}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1 &1900986323
 GameObject:
   m_ObjectHideFlags: 0
@@ -16451,7 +16616,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aa25b92b2c6671428b70f2a6d0b44d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost_Soldier: {fileID: 2143537795}
 --- !u!1 &2143537794
 GameObject:
   m_ObjectHideFlags: 0
@@ -16481,11 +16645,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae5380119a1a9974ca020e3849668c36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextForCost: 0
-  cost: 0
-  maxCost: 500
-  interval: 3.5
-  costRare: 25
 --- !u!4 &2143537796
 Transform:
   m_ObjectHideFlags: 0
@@ -16498,7 +16657,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &374537817723532148
 MeshFilter:
@@ -16538,7 +16697,7 @@ Transform:
   - {fileID: 7642562913565960589}
   - {fileID: 4290110814734399790}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!4 &543450652802291607
 Transform:
@@ -16556,7 +16715,7 @@ Transform:
   - {fileID: 7642562912582019584}
   - {fileID: 4290110813704092323}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!23 &859613238805302211
 MeshRenderer:
@@ -16630,9 +16789,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75c56fda386a1d04393dc23fbf98952e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
-  maxHealth: 1000
-  alive: 1
 --- !u!54 &919132147965922978
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16693,9 +16849,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75c56fda386a1d04393dc23fbf98952e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
-  maxHealth: 1000
-  alive: 1
 --- !u!54 &919132148878560559
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16868,7 +17021,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2644669176566576549}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 46.78062, y: 21.119036, z: -53.71}
+  m_LocalPosition: {x: 46.78062, y: 21.119036, z: -59.19}
   m_LocalScale: {x: 200, y: 100, z: 100}
   m_Children:
   - {fileID: 1214049825142182233}
