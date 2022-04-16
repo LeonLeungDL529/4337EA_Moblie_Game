@@ -16,9 +16,16 @@ public class Menu_Manager : MonoBehaviour
     {}
     public void StartGame()
     {
-
+        SceneManager.LoadScene("RTST_RoadScene", LoadSceneMode.Additive);
     }
-
+    public void PauseGame()
+    {
+        Time.timeScale = 0;
+    }
+    public void ResumeGame()
+    {
+        Time.timeScale = 1;
+    }
 
     public void Quit_Game()
     {

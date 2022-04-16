@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Chess
+  - P2_UI
+  - P1_UI
+  - Player_1
+  - Player_2
+  - Bullet
   layers:
   - Default
   - TransparentFX
@@ -12,7 +17,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - selectable_Layer
   - 
   - 
   - 

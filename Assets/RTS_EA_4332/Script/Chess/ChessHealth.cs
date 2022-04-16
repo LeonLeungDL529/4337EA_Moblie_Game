@@ -27,6 +27,10 @@ public class ChessHealth : MonoBehaviour
     }
     private void Update()
     {
-        if(chessHealth <= 0) { Destroy(transform.parent.gameObject); }
+       /* if(chessHealth <= 0)
+        {
+           
+            //Destroy(transform.parent.gameObject); 
+        }*/
     }
 }
