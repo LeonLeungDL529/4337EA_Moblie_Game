@@ -19,7 +19,8 @@ public class InputManager : MonoBehaviour
             {
                 if(hit.collider.gameObject.GetComponent<NavFollower>() !=null)
                 {
-                    hit.collider.gameObject.GetComponent<NavFollower>().SelectingChess();                
+                    hit.collider.gameObject.GetComponent<NavFollower>().SelectingChess();
+                    Debug.Log("Working");
                 }
                 else if(hit.collider.gameObject.GetComponent<NavFollower>() == null)
                 {
