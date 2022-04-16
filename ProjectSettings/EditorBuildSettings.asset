@@ -9,12 +9,6 @@ EditorBuildSettings:
     path: Assets/RTS_EA_4332/Scenes/Game_Menu_Sence.unity
     guid: cfb9c3ae1d081a140aefa69036800326
   - enabled: 1
-    path: Assets/RTS_EA_4332/Scenes/Photon/LoadingScene.unity
-    guid: dd279ab3cfb055e4c88b541da238d16a
-  - enabled: 1
-    path: Assets/RTS_EA_4332/Scenes/Photon/Start_sence.unity
-    guid: 0e72ebc2c857dd44ab1235110347d7ce
-  - enabled: 1
-    path: Assets/RTS_EA_4332/Scenes/4332EA/RTS_Capture_Map.unity
-    guid: 6859ec3da24408945aff155549b888e4
+    path: Assets/RTS_EA_4332/Scenes/RTST_RoadScene.unity
+    guid: 872b6286c87e4d142be73a98b8e84f8f
   m_configObjects: {}

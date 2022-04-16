@@ -14,7 +14,7 @@ public class Shooting : MonoBehaviour
     private Bullet bulletManager;
 
     //[SerializeField] private GameObject shootingSource;
-    [SerializeField] private bool beginningShooting = false;
+    [SerializeField] public bool beginningShooting = false;
     [SerializeField] private LayerMask layerMask;
     private float nextForFire = 0f;
 
