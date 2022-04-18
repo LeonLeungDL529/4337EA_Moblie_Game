@@ -8,6 +8,7 @@ public class Shooting : MonoBehaviour
     public GameObject shootingPoint;
     public GameObject checkingPoint;
     public GameObject bullet;
+    [SerializeField] private GameObject shootingSource;
     public int chessTeamNumber;
     public GameObject character;
     [SerializeField] private ChessManager chessManager;
@@ -32,7 +33,8 @@ public class Shooting : MonoBehaviour
             bulletManager.damage = chessManager.chessDamage;
             bulletManager.chessTeamNumber = chessTeamNumber;
             Instantiate(bullet, shootingPoint.transform.position, shootingPoint.transform.rotation);
-           //Instantiate(shootingSource, shootingPoint.transform.position, shootingPoint.transform.rotation);
+            Instantiate(shootingSource, shootingPoint.transform.position, shootingPoint.transform.rotation);
+            //Instantiate(shootingSource, shootingPoint.transform.position, shootingPoint.transform.rotation);
             beginningShooting = false;
         }
     }
@@ -49,6 +51,10 @@ public class Shooting : MonoBehaviour
                 {
                     character.transform.LookAt(other.transform);
                     beginningShooting = true;
+                }
+                else
+                {
+
                 }
             }
         }

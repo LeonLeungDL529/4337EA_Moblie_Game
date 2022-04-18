@@ -13,18 +13,21 @@ public class NavFollower : MonoBehaviour
     Animator chessMoveSet;
    public ChessHealth TheCH;
     public Shooting shoot;
+    public AudioClip arrr;
 
     private void Awake()
     {
         nav = GetComponent<NavMeshAgent>();
         chessMoveSet = this.GetComponent<Animator>();
-        TheCH = this.GetComponent<ChessHealth>();      
+        TheCH = this.GetComponent<ChessHealth>();
+        
         targetForFollow.transform.position = transform.position;
     }
     void Update()
     {
-        
-        
+        AudioSource aud = GetComponent<AudioSource>();
+       
+
         selectedRing.SetActive(isSelected);
         if (this.transform.position.x == targetForFollow.transform.position.x&& this.transform.position.z == targetForFollow.transform.position.z) 
         { targetForFollow.SetActive(false); chessMoveSet.SetBool("Idle", true); chessMoveSet.SetBool("Walk", false); chessMoveSet.SetFloat("Run_Null", 0); }
@@ -34,10 +37,17 @@ public class NavFollower : MonoBehaviour
 
         if (TheCH.chessHealth <= 0.0f)
         {
-            chessMoveSet.SetBool("Dead", true);
+            
+            
+               chessMoveSet.SetBool("Dead", true);
+                aud.PlayOneShot(arrr);
+                Destroy(transform.parent.gameObject, 2.5f);
+                
+            
         }
         if (shoot.beginningShooting== true)
         {
+           
             chessMoveSet.SetBool("Shoot",true);
         }
         else
