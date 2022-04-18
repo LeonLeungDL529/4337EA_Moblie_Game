@@ -18,8 +18,7 @@ public class NavFollower : MonoBehaviour
     {
         nav = GetComponent<NavMeshAgent>();
         chessMoveSet = this.GetComponent<Animator>();
-        TheCH = this.GetComponent<ChessHealth>();
-        shoot = GetComponentInChildren<Shooting>();
+        TheCH = this.GetComponent<ChessHealth>();      
         targetForFollow.transform.position = transform.position;
     }
     void Update()
@@ -31,6 +30,8 @@ public class NavFollower : MonoBehaviour
         { targetForFollow.SetActive(false); chessMoveSet.SetBool("Idle", true); chessMoveSet.SetBool("Walk", false); chessMoveSet.SetFloat("Run_Null", 0); }
         else if (targetForFollow.activeSelf)
         { nav.destination = targetForFollow.transform.position; }
+
+
         if (TheCH.chessHealth <= 0.0f)
         {
             chessMoveSet.SetBool("Dead", true);

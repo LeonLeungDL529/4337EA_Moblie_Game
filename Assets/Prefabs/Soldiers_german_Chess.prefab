@@ -28,7 +28,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1203175819719586666}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1058967782973783681
 GameObject:
@@ -783,6 +783,7 @@ GameObject:
   - component: {fileID: 1058967784062171906}
   - component: {fileID: 1058967784062171904}
   - component: {fileID: 1058967784062171905}
+  - component: {fileID: 3292756943195968195}
   m_Layer: 2
   m_Name: Trigger
   m_TagString: Untagged
@@ -801,8 +802,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1203175819719586666}
-  m_RootOrder: 3
+  m_Father: {fileID: 1058967784863868171}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &1058967784062171904
 SphereCollider:
@@ -839,7 +840,26 @@ MonoBehaviour:
   beginningShooting: 0
   layerMask:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 64
+--- !u!1818360608 &3292756943195968195
+PositionConstraint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1058967784062171907}
+  m_Enabled: 1
+  m_Weight: 1
+  m_TranslationAtRest: {x: 0, y: 0, z: 0}
+  m_TranslationOffset: {x: 0, y: 0, z: 0}
+  m_AffectTranslationX: 1
+  m_AffectTranslationY: 1
+  m_AffectTranslationZ: 1
+  m_IsContraintActive: 1
+  m_IsLocked: 0
+  m_Sources:
+  - sourceTransform: {fileID: 1203175819719586666}
+    weight: 1
 --- !u!1 &1058967784863868173
 GameObject:
   m_ObjectHideFlags: 0
@@ -870,6 +890,7 @@ Transform:
   m_Children:
   - {fileID: 1058967783867723327}
   - {fileID: 1058967783181653539}
+  - {fileID: 1058967784062171906}
   - {fileID: 1203175819719586666}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -889,7 +910,7 @@ MonoBehaviour:
   chessMaxHeath: 1000
   chessSpeed: 5
   chessDamage: 5
-  shootingSpeed: 10
+  shootingSpeed: 5
   chessTeamNumber: 1
   hpSlider: {fileID: 1058967784056817030}
   hpTxt: {fileID: 1058967783079633982}
@@ -1700,10 +1721,9 @@ Transform:
   - {fileID: 1203175819719586964}
   - {fileID: 1203175819719592766}
   - {fileID: 1058967783793366509}
-  - {fileID: 1058967784062171906}
   - {fileID: 1058967782965968868}
   m_Father: {fileID: 1058967784863868171}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1203175819710491570
 Animator:
@@ -1776,6 +1796,7 @@ MonoBehaviour:
   isSelected: 0
   selectedRing: {fileID: 1058967783793366510}
   TheCH: {fileID: 0}
+  shoot: {fileID: 1058967784062171905}
 --- !u!114 &1203175819719873172
 MonoBehaviour:
   m_ObjectHideFlags: 0

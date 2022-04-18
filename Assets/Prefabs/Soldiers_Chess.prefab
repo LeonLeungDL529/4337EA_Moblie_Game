@@ -124,7 +124,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4452244989174659844}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1824507077457212191
 GameObject:
@@ -437,6 +437,7 @@ Transform:
   m_Children:
   - {fileID: 7438666410960226473}
   - {fileID: 1824507078061477911}
+  - {fileID: 1824507078347980693}
   - {fileID: 4452244989174659844}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -456,7 +457,7 @@ MonoBehaviour:
   chessMaxHeath: 1000
   chessSpeed: 5
   chessDamage: 5
-  shootingSpeed: 10
+  shootingSpeed: 5
   chessTeamNumber: 1
   hpSlider: {fileID: 7438666410742799843}
   hpTxt: {fileID: 1824507077457212190}
@@ -472,6 +473,7 @@ GameObject:
   - component: {fileID: 1824507078347980693}
   - component: {fileID: 1824507078347980695}
   - component: {fileID: 1824507078347980692}
+  - component: {fileID: 3618315435237097143}
   m_Layer: 2
   m_Name: Trigger
   m_TagString: Untagged
@@ -490,8 +492,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4452244989174659844}
-  m_RootOrder: 4
+  m_Father: {fileID: 1824507078302987860}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &1824507078347980695
 SphereCollider:
@@ -528,7 +530,26 @@ MonoBehaviour:
   beginningShooting: 0
   layerMask:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 64
+--- !u!1818360608 &3618315435237097143
+PositionConstraint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824507078347980714}
+  m_Enabled: 1
+  m_Weight: 1
+  m_TranslationAtRest: {x: 0, y: 0, z: 0}
+  m_TranslationOffset: {x: 0, y: 0, z: 0}
+  m_AffectTranslationX: 1
+  m_AffectTranslationY: 1
+  m_AffectTranslationZ: 1
+  m_IsContraintActive: 1
+  m_IsLocked: 0
+  m_Sources:
+  - sourceTransform: {fileID: 4452244989174659844}
+    weight: 1
 --- !u!1 &4452244989174556288
 GameObject:
   m_ObjectHideFlags: 0
@@ -1288,10 +1309,9 @@ Transform:
   - {fileID: 4452244989174659744}
   - {fileID: 1824507077884009235}
   - {fileID: 1824507077149975199}
-  - {fileID: 1824507078347980693}
   - {fileID: 1824507077290943653}
   m_Father: {fileID: 1824507078302987860}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &4452244989174556527
 MeshRenderer:
@@ -1405,6 +1425,7 @@ MonoBehaviour:
   isSelected: 0
   selectedRing: {fileID: 1824507077149975196}
   TheCH: {fileID: 0}
+  shoot: {fileID: 1824507078347980692}
 --- !u!136 &4452244989174556520
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1655,7 +1676,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6586548573742808831}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4452244989174659844}

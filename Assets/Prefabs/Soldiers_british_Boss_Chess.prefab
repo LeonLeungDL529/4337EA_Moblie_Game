@@ -606,7 +606,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8031984686139627979}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6743129517275954069
 GameObject:
@@ -713,6 +713,7 @@ Transform:
   m_Children:
   - {fileID: 6743129516225833771}
   - {fileID: 6743129516915495735}
+  - {fileID: 6743129518330396182}
   - {fileID: 8031984686139627979}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -732,7 +733,7 @@ MonoBehaviour:
   chessMaxHeath: 1000
   chessSpeed: 5
   chessDamage: 5
-  shootingSpeed: 10
+  shootingSpeed: 5
   chessTeamNumber: 1
   hpSlider: {fileID: 6743129518327267474}
   hpTxt: {fileID: 6743129517014409514}
@@ -837,6 +838,7 @@ GameObject:
   - component: {fileID: 6743129518330396182}
   - component: {fileID: 6743129518330396180}
   - component: {fileID: 6743129518330396181}
+  - component: {fileID: 5030642154401734703}
   m_Layer: 2
   m_Name: Trigger
   m_TagString: Untagged
@@ -855,8 +857,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 8031984686139627979}
-  m_RootOrder: 3
+  m_Father: {fileID: 6743129517523968031}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &6743129518330396180
 SphereCollider:
@@ -893,7 +895,26 @@ MonoBehaviour:
   beginningShooting: 0
   layerMask:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 64
+--- !u!1818360608 &5030642154401734703
+PositionConstraint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6743129518330396183}
+  m_Enabled: 1
+  m_Weight: 1
+  m_TranslationAtRest: {x: 0, y: 0, z: 0}
+  m_TranslationOffset: {x: 0, y: 0, z: 0}
+  m_AffectTranslationX: 1
+  m_AffectTranslationY: 1
+  m_AffectTranslationZ: 1
+  m_IsContraintActive: 1
+  m_IsLocked: 0
+  m_Sources:
+  - sourceTransform: {fileID: 8031984686139627979}
+    weight: 1
 --- !u!1 &8031984686139775831
 GameObject:
   m_ObjectHideFlags: 0
@@ -1845,10 +1866,9 @@ Transform:
   - {fileID: 8031984686139602061}
   - {fileID: 8031984686139685749}
   - {fileID: 6743129516451107065}
-  - {fileID: 6743129518330396182}
   - {fileID: 6743129517270235888}
   m_Father: {fileID: 6743129517523968031}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &8031984686130388253
 Animator:
@@ -1907,7 +1927,7 @@ MonoBehaviour:
   isSelected: 0
   selectedRing: {fileID: 6743129516451107066}
   TheCH: {fileID: 0}
-  shoot: {fileID: 0}
+  shoot: {fileID: 6743129518330396181}
 --- !u!114 &8031984686139897556
 MonoBehaviour:
   m_ObjectHideFlags: 0
