@@ -11,9 +11,11 @@ public class Shooting : MonoBehaviour
     [SerializeField] private GameObject shootingSource;
     public int chessTeamNumber;
     public GameObject character;
+    [SerializeField]AudioSource bulletAudio;
     [SerializeField] private ChessManager chessManager;
     private Bullet bulletManager;
-
+    //List<GameObject> bulletList;
+    List<GameObject> pewtList;
     //[SerializeField] private GameObject shootingSource;
     [SerializeField] public bool beginningShooting = false;
     [SerializeField] private LayerMask layerMask;
@@ -23,7 +25,23 @@ public class Shooting : MonoBehaviour
     {
         chessTeamNumber = chessManager.chessTeamNumber;
         bulletManager = bullet.GetComponent<Bullet>();
+        /* bulletList = new List<GameObject>();
+          for (int i = 0; i < 2; i++)
+          {
+              GameObject objBullet = (GameObject)Instantiate(bullet);
+              objBullet.SetActive(false);
+              bulletList.Add(objBullet);
+          } */
+        pewtList = new List<GameObject>();
+        for (int i = 0; i < 2; i++)
+        {
+            GameObject objPew = (GameObject)Instantiate(shootingSource);
+            objPew.SetActive(false);
+            pewtList.Add(objPew);
+        }
         intervalForShoot = chessManager.shootingSpeed;
+
+
     }
     private void Update()
     {
@@ -33,9 +51,28 @@ public class Shooting : MonoBehaviour
             bulletManager.damage = chessManager.chessDamage;
             bulletManager.chessTeamNumber = chessTeamNumber;
             Instantiate(bullet, shootingPoint.transform.position, shootingPoint.transform.rotation);
+            for (int i = 0; i < pewtList.Count; i++)
+            {
+                if (!pewtList[i].activeInHierarchy)
+
+                {
+                    pewtList[i].transform.position = transform.position;
+                    pewtList[i].transform.rotation = transform.rotation;
+                    pewtList[i].SetActive(true);
+                    
+                    break;
+                }
+            }
             Instantiate(shootingSource, shootingPoint.transform.position, shootingPoint.transform.rotation);
             //Instantiate(shootingSource, shootingPoint.transform.position, shootingPoint.transform.rotation);
             beginningShooting = false;
+        }
+        if (this.gameObject==null)
+        {
+            for (int i = 2; i > 0; i--)
+            {
+                Destroy(pewtList[i]);
+            }
         }
     }
     private void OnTriggerStay(Collider other)
@@ -46,16 +83,13 @@ public class Shooting : MonoBehaviour
                 RaycastHit hit;
                 Ray r = new Ray(checkingPoint.transform.position, checkingPoint.transform.forward);
                 Physics.Raycast(r, out hit, this.GetComponent<SphereCollider>().radius, layerMask);
-
-                if (hit.collider.GetComponent<ChessHealth>().chessTeamNumber != this.chessTeamNumber)
+           
+                if (other.GetComponent<ChessHealth>().chessTeamNumber != this.chessTeamNumber)
                 {
-                    character.transform.LookAt(other.transform);
+                     character.transform.LookAt(other.transform);
                     beginningShooting = true;
                 }
-                else
-                {
-
-                }
+               
             }
         }
     }

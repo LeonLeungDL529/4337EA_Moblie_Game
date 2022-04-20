@@ -38,12 +38,14 @@ public class NavFollower : MonoBehaviour
         if (TheCH.chessHealth <= 0.0f)
         {
             
-            
-               chessMoveSet.SetBool("Dead", true);
-                aud.PlayOneShot(arrr);
-                Destroy(transform.parent.gameObject, 2.5f);
+            aud.PlayOneShot(arrr);   
+           
+            chessMoveSet.SetBool("Dead", true);
                 
-            
+                Destroy(transform.parent.gameObject, 2.5f);
+         
+
+
         }
         if (shoot.beginningShooting== true)
         {

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5442957984937127718}
   - component: {fileID: 5442957984937127719}
   - component: {fileID: 5442957984937127716}
+  - component: {fileID: 3900144004482845550}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Bullet
@@ -111,3 +112,17 @@ MonoBehaviour:
   damage: 5
   speed: 30
   chessTeamNumber: 1
+--- !u!114 &3900144004482845550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5442957984937127717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e428f0c913c3d0458a229dec045fd1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delTime: 5
+  destorypew: 1
